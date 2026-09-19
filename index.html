@@ -36,6 +36,7 @@
             radial-gradient(ellipse 80% 40% at 50% -10%, rgba(140, 29, 19, 0.35), transparent 70%),
             var(--ember-black);
         background-attachment: fixed;
+        touch-action: manipulation;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -173,6 +174,9 @@
         font-weight: 700;
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+        -webkit-user-select: none;
+        user-select: none;
     }
 
     button:active {
